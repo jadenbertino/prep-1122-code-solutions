@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Layout Classes</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      /* stylelint-disable block-no-empty */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container {
+        max-width: 992px;
+        margin: auto;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+      }
+
+      .column {
+        flex-basis: calc(100% / 3);
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Indiana Jones</h1>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img src="./images/raiders.jpg" alt="Raiders of the Lost Ark" />
+          <h3>Raiders of the Lost Ark</h3>
+          <p>
+            Lucas conceived Raiders of the Lost Ark in the eraly 1970s. Seeking
+            to modernize the serial films of the early 20th-century, he
+            developed the idea further with Kaufman, who suggested the Ark as
+            the film's goal. Lucas eventually focused on developing his 1977
+            space opera Star Wars
+          </p>
+        </div>
+        <div class="column">
+          <img src="./images/temple.jpg" alt="Temple of Doom" />
+          <h3>Temple of Doom</h3>
+          <p>
+            The film was release to financial success but initial reviews were
+            mixed, criticizing its darker elements and violence. However,
+            critical opinion has improved since 1984, citing the film's
+            intensity and imagination.
+          </p>
+        </div>
+        <div class="column">
+          <img src="./images/crusade.jpg" alt="The Last Crusade" />
+          <h3>The Last Crusade</h3>
+          <p>
+            After the mixed reaction to Indiana Jones and the Temple of Doom,
+            Spielberg chose to tone down the dark tone and graphic violence in
+            the next installment. During the five years between The Temple of
+            Doom and The Last Crusade, he and executive producer Lucas reviewed
+            several scripts before accepting Jeffrey Boam's
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
