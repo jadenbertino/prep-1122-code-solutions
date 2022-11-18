@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Flexbox - align-items</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="starwars.css">
+  <style>
+    #card-deck {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-wrapper {
+      flex-basis: calc(100% / 3);
+    }
+  </style>
+</head>
+<body>
+  <div id="card-deck">
+    <div class="card-wrapper">
+      <div class="star-wars-card">
+        <img src="images/yoda.jpg" alt="yoda">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
