@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-var": "off",
+    "no-console": "off",
+    "dot-notation": "off"
+  }
+}
